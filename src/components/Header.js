@@ -3,8 +3,9 @@
 import React from "react";
 import { Router, Route } from "react-router-dom";
 import Nav from "./Header/Nav";
-import Home from "./Header/Home";
-import Shop from "./Header/Shop";
+import Home from "./Main/Home";
+import Shop from "./Main/Shop";
+import './style.css';
 
 const Header = () => {
 
