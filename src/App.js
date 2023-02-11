@@ -1,16 +1,20 @@
 // App.js
 
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
-function App {
+const App = () => {
 
   return (
-    <div>
-    </div>
+    <Router>
+      <Header />
+      <Main />
+      <Footer />
+    </Router>
   );
-
-
-}
-
+};
 
 export default App;
