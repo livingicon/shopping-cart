@@ -3,8 +3,15 @@
 import React from "react";
 
 const Cart = () => {
+  
+  const openCart = () => {
+    console.log('clicked');
+  }
+  
   return (
-    <h1>Cart Logo</h1>
+    <div>
+      <h4 id="cart" onClick={openCart}>Cart Logo</h4>
+    </div>
   )
 }
 
