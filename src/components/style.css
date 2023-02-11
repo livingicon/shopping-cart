@@ -1,5 +1,36 @@
+:root {
+  --red: #c52018;
+  --yellow: #f4d13b;
+  --blue: #344b97;
+  --dark-grey: #1d2233;
+  --cream: #f7f8d9;
+
+}
+
+html {
+  font-size: 1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--dark-grey);
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .Header {
   text-align: center;
+}
+
+.Footer {
+  text-align: center;
+  background: blue;
+  color: white;
 }
 
 nav {
