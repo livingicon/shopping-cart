@@ -1,0 +1,24 @@
+.Header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: blue;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  list-style: none;
+}
+
+.link {
+  color: white;
+}
