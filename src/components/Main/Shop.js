@@ -16,7 +16,7 @@ const Shop = () => {
     const items = [];
     for (let i = 1; i <= 15; i++) {
       const fakeStoreURL = `https://fakestoreapi.com/products/${i}`;
-      const response = await fetch(fakeStoreURL);
+      const response = await fetch(fakeStoreURL, {mode: 'cors'});
       const products = await response.json();
       const itemID = products.id;
       const itemName = products.title;
@@ -24,6 +24,7 @@ const Shop = () => {
       const itemImg = products.image;
       items.push({ itemID, itemImg, itemName, itemPrice });
     }
+    console.log(items);
     return items;
   };
   
