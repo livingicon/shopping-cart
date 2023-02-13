@@ -29,11 +29,22 @@ const Shop = () => {
     console.log(items);
     return items;
   };
+
+  const productCards = items.map((item) => (
+    <ProductCards
+      // addToCart={addtoCart}
+      item={item}
+      key={item.itemID} 
+      // name={item.itemName}
+      // price={item.itemPrice}
+      // img={item.itemImg}
+    />
+  ));
   
   return (
     <div>
-      <h1>Shop Page</h1>
-      <ProductCards />
+      <h1>Items for Sale</h1>
+      {productCards}
     </div>
   );
 }
