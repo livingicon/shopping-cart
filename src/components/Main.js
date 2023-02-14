@@ -5,14 +5,14 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Main/Home";
 import Shop from "./Main/Shop";
 
-const Main = () => { //delete?
-
+const Main = () => {
   return (
-  <Routes>
-    <Route path="/home" element={<Home />} />
-    <Route path="/shop" element={<Shop />} />
-  </Routes>
-    // this actually needs to be home
+    <div>
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </div>
   )
 }
 

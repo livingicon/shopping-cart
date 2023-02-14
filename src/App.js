@@ -5,6 +5,7 @@ import { BrowserRouter as Browser } from "react-router-dom";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+// import Home from "./components/Main/Home";
 
 const App = () => {
   // change Main to Nav?
