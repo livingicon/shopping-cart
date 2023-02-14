@@ -11,7 +11,7 @@ const Nav = () => {
     <nav>
       <h1>Company Logo</h1>
       <ul className="nav-links">
-        <Link className="link" to='/home'>
+        <Link className="link" to=''>
           <li>Home</li>
         </Link>
         <Link className="link" to='/shop'>
