@@ -2,10 +2,11 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import Cart from "./Cart";
-import '../style.css';
+import Cart from "./Nav/Cart";
+import './style.css';
 
 const Nav = () => {
+
   return (
     <nav>
       <h1>Company Logo</h1>

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import ProductCards from "./ProductCards";
 import uniqid from "uniqid";
 
-const Shop = () => {
+const Shop = ({ addToCart }) => {
   // add loader?
   const [items, setItems] = useState([]);
 
@@ -22,10 +22,6 @@ const Shop = () => {
     const products = await response.json();
     return products;
   };
-
-  const addToCart = () => {
-    console.log("add it to cart");
-  }
 
   const itemCards = items.map((item) => (
     <ProductCards
