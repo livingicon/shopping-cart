@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import ProductCards from "./ProductCards";
+import uniqid from "uniqid";
 
 const Shop = () => {
   // add loader?
@@ -30,7 +31,7 @@ const Shop = () => {
     <ProductCards
       addToCart={addToCart}
       item={item}
-      key={item.id} 
+      key={uniqid()}
     />
   ));
   
