@@ -6,10 +6,10 @@ import React from "react";
 const ProductCards = ({ item, addToCart }) => {
 
   return (
-    <div className="card" id={item.key}>
-      <img src={item.itemImg} alt={item.itemName} id={item.itemName}/>
-      <p className="cardTitle" id={item.itemName}>{item.itemName}</p>
-      <p className="cardPrice" id={item.name}>{item.itemPrice}</p>
+    <div className="card">
+      <img src={item.image} alt={item.description}/>
+      <p>{item.description}</p>
+      <p>{item.price}</p>
       <button onClick={addToCart}>add to cart</button>
     </div>
   )
