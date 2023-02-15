@@ -5,7 +5,6 @@ import ProductCards from "./ProductCards";
 import uniqid from "uniqid";
 
 const Shop = ({ addToCart }) => {
-  // add loader?
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -25,9 +24,9 @@ const Shop = ({ addToCart }) => {
 
   const itemCards = items.map((item) => (
     <ProductCards
-      addToCart={addToCart}
-      item={item}
       key={uniqid()}
+      item={item}
+      addToCart={addToCart}
     />
   ));
   

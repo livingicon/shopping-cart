@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Cart from "./Nav/Cart";
 import './style.css';
 
-const Nav = () => {
+const Nav = ({ cartItems }) => {
 
   return (
     <nav>
@@ -18,7 +18,9 @@ const Nav = () => {
           <li>Shop</li>
         </Link>
       </ul>
-      <Cart />
+      <Cart
+        cartItems={cartItems}
+      />
     </nav>
   )
 }

@@ -9,7 +9,7 @@ const ProductCards = ({ item, addToCart }) => {
       <img className='itemImg' src={item.image} alt={item.title}/>
       <p className='itemName'>{item.title}</p>
       <p className='itemPrice'>{item.price}</p>
-      <button className='itemBtn' onClick={addToCart}>add to cart</button>
+      <button className='itemBtn' id={item.id} onClick={addToCart}>add to cart</button>
     </div>
   )
 }
