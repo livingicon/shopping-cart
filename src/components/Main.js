@@ -6,13 +6,13 @@ import Home from "./Main/Home";
 import Shop from "./Main/Shop";
 import Checkout from "./Main/Checkout";
 
-const Main = ({ cartItems, addToCart, isVisible }) => {
+const Main = ({ cartItems, addToCart, isVisible, openCart }) => {
 
   return (
     <div>
       {isVisible &&
         <Checkout 
-          // showCart={showCart}
+          openCart={openCart}
           // cartItems={cartItems}
         />
       }

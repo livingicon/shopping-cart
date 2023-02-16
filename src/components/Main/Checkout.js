@@ -2,11 +2,13 @@
 
 import React from "react";
 
-const Checkout = ({ cartItems, addToCart, isVisible }) => {
+const Checkout = ({ openCart }) => {
 
   return (
     <div>
-      CHECKOUT!
+      <p>item</p>
+      {/* {checkOutItems} */}
+      <button onClick={openCart}>continue shopping</button>
     </div>
   )
 }
