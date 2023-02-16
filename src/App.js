@@ -8,20 +8,23 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const addToCart = (e) => {
-    setCartItems(cartItems.concat(e.target.id));
-  }
+  const addToCart = (e) => setCartItems(cartItems.concat(e.target.id));
+  const openCart = () => !isVisible ? setIsVisible(true) : setIsVisible(false);
 
   return (
     <Browser>
       <div className="App">
         <Nav 
           cartItems={cartItems}
+          openCart={openCart}
         />
         <Main 
           cartItems={cartItems}
           addToCart={addToCart}
+          openCart={openCart}
+          isVisible={isVisible}
         />
         <Footer />
       </div>

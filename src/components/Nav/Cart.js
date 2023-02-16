@@ -1,11 +1,8 @@
 // Cart.js
 
-import React, { useState } from "react";
+import React from "react";
 
-const Cart = ({cartItems}) => {
-  const [isVisible, setIsVisible] = useState(false);
-  
-  const openCart = () => !isVisible ? setIsVisible(true) : setIsVisible(false);
+const Cart = ({ cartItems, openCart }) => {
   
   return (
     <div>
@@ -13,12 +10,6 @@ const Cart = ({cartItems}) => {
       <div id="cartItems">
         {cartItems.length ? cartItems.length : null}
       </div>
-      {/* {isVisible && 
-        <Checkout 
-          showCart={openCart}
-          cartItems={cartItems}
-        />
-      } */}
     </div>
   )
 }
