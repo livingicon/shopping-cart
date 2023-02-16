@@ -1,28 +1,28 @@
 // Shop.js
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ProductCards from "./ProductCards";
 import uniqid from "uniqid";
 
-const Shop = ({ addToCart }) => {
-  const [items, setItems] = useState([]);
+const Shop = ({ addToCart, shopItems }) => {
+  // const [shopItems, setShopItems] = useState([]);
 
-  useEffect(() => {
-    loadItems();
-  }, []);
+  // useEffect(() => {
+  //   loadItems();
+  // }, []);
 
-  const loadItems = async () => {
-    setItems(items.concat(await fetchItems()));
-  }
+  // const loadItems = async () => {
+  //   setShopItems(shopItems.concat(await fetchItems()));
+  // }
   
-  const fetchItems = async () => {
-    const fakeStoreURL = 'https://fakestoreapi.com/products/';
-    const response = await fetch(fakeStoreURL);
-    const products = await response.json();
-    return products;
-  };
+  // const fetchItems = async () => {
+  //   const fakeStoreURL = 'https://fakestoreapi.com/products/';
+  //   const response = await fetch(fakeStoreURL);
+  //   const products = await response.json();
+  //   return products;
+  // };
 
-  const itemCards = items.map((item) => (
+  const productCards = shopItems.map((item) => (
     <ProductCards
       key={uniqid()}
       item={item}
@@ -33,7 +33,7 @@ const Shop = ({ addToCart }) => {
   return (
     <div>
       <h1>Items for Sale</h1>
-      {itemCards}
+      {productCards}
     </div>
   );
 }

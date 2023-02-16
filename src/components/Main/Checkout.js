@@ -4,15 +4,13 @@ import React from "react";
 import uniqid from "uniqid";
 import ItemCard from "./ItemCard";
 
-const Checkout = ({ openCart, cartItems }) => {
+const Checkout = ({ openCart, cartItems, shopItems }) => {
 
-  const checkOutItems = cartItems.map((item) => (
-    // console.log('working');
+  const checkOutItems = cartItems.map((cartItem) => (
     <ItemCard 
       key={uniqid()}
-      item={item}
-      // id={item.id}
-      // price={item.price}
+      cartItem={cartItem}
+      shopItems={shopItems}
     />
   ));
 
