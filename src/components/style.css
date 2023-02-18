@@ -52,6 +52,21 @@ nav {
   color: white;
 }
 
+#cart {
+  --wide: 350px;
+  --high: 350px;
+  border-radius: 10px;
+  background-color: red;
+  position: fixed;
+  width: var(--wide);
+  height: var(--high);
+  top: 50%;
+  left: 50%;
+  margin-top: calc(var(--high) / -1); /* Negative half of height. */
+  margin-left: calc(var(--wide) / -2); /* Negative half of width. */
+  overflow: auto;
+}
+
 img {
   max-width: 100px;
   max-height: 100px;

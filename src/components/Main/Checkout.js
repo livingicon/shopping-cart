@@ -22,7 +22,7 @@ const Checkout = ({ openCart, cartItems, addToCart, incrementItem }) => {
   ));
 
   return (
-    <div>
+    <div id="cart">
       <h1>Cart</h1>
       {checkOutItems}
       <p>Total: ${total()}</p>
