@@ -23,11 +23,11 @@ const App = () => {
     const fakeStoreURL = 'https://fakestoreapi.com/products/';
     const response = await fetch(fakeStoreURL);
     const products = await response.json();
-    // create the array I want here (image, title, price, quantity);
-    return products;
+    const lessProducts = products.filter((i) => i.category === "men's clothing" || i.category === "women's clothing");
+    return lessProducts;
   };
 
-  const addToCart = (e) => { // has to be here (cartItems to Nav and Main)
+  const addToCart = (e) => {
     let added = shopItems.filter((i) => i.id === Number(e.target.id));
     added[0].quantity = 1;
     setCartItems(cartItems.concat(added[0]));

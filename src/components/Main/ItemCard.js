@@ -8,7 +8,7 @@ const ItemCard = ({ cartItem, shopItems }) => {
     <div className="itemCard">
       <img src={cartItem.image} alt={cartItem.title} />
       <p>{cartItem.title}</p>
-      <p>{cartItem.price}</p>
+      <p>{cartItem.price * cartItem.quantity}</p>
       <button>-</button>
       {cartItem.quantity}
       <button>+</button>
