@@ -32,7 +32,7 @@ const App = () => {
     if (!cartItems.length || (cartItems.filter((i) => i.id === Number(e.target.id)).length === 0)) {
       added[0].quantity = 1;
       setCartItems(cartItems.concat(added[0]));
-    } else { // if it matches what is already in array
+    } else {
       const newCartItems = [...cartItems];
       for (let i=0; i<newCartItems.length; i++) {
         if (newCartItems[i].id === Number(e.target.id)) {
