@@ -7,9 +7,9 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 const App = () => {
+  const [shopItems, setShopItems] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
-  const [shopItems, setShopItems] = useState([]);
 
   useEffect(() => {
     loadItems();
@@ -29,8 +29,18 @@ const App = () => {
 
   const addToCart = (e) => {
     let added = shopItems.filter((i) => i.id === Number(e.target.id));
-    added[0].quantity = 1;
-    setCartItems(cartItems.concat(added[0]));
+    if (!cartItems.length || (cartItems.filter((i) => i.id === Number(e.target.id)).length === 0)) {
+      added[0].quantity = 1;
+      setCartItems(cartItems.concat(added[0]));
+    } else {
+      const newCartItems = [...cartItems];
+      for (let i=0; i<newCartItems.length; i++) {
+        if (newCartItems[i].id === Number(e.target.id)) {
+          newCartItems[i].quantity = newCartItems[i].quantity + 1;
+        }
+        setCartItems(newCartItems);
+      }
+    }
   }
 
   const openCart = () => !isVisible ? setIsVisible(true) : setIsVisible(false);

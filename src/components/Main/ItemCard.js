@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const ItemCard = ({ cartItem, shopItems }) => {
+const ItemCard = ({ cartItem }) => {
 
   return (
     <div className="itemCard">
