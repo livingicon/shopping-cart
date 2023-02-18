@@ -48,10 +48,11 @@ const App = () => {
     for (let i=0; i<cartItemsCopy.length; i++) {
       if (cartItemsCopy[i].id === Number(e.target.id) && e.target.innerHTML === '+') {
         cartItemsCopy[i].quantity = cartItemsCopy[i].quantity + 1;
-      } else if (cartItemsCopy[i].id === Number(e.target.id) && e.target.innerHTML === '-') {
+      } else if (cartItemsCopy[i].id === Number(e.target.id) && e.target.innerHTML === '-' && cartItemsCopy[i].quantity) {
         cartItemsCopy[i].quantity = cartItemsCopy[i].quantity - 1;
       }
-      setCartItems(cartItemsCopy); 
+      const itemsNotZero = cartItemsCopy.filter((i) => i.quantity)
+      setCartItems(itemsNotZero); 
     }
   }
 
