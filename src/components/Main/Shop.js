@@ -5,22 +5,6 @@ import ProductCards from "./ProductCards";
 import uniqid from "uniqid";
 
 const Shop = ({ addToCart, shopItems }) => {
-  // const [shopItems, setShopItems] = useState([]);
-
-  // useEffect(() => {
-  //   loadItems();
-  // }, []);
-
-  // const loadItems = async () => {
-  //   setShopItems(shopItems.concat(await fetchItems()));
-  // }
-  
-  // const fetchItems = async () => {
-  //   const fakeStoreURL = 'https://fakestoreapi.com/products/';
-  //   const response = await fetch(fakeStoreURL);
-  //   const products = await response.json();
-  //   return products;
-  // };
 
   const productCards = shopItems.map((item) => (
     <ProductCards

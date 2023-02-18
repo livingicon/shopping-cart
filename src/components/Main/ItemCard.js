@@ -8,7 +8,7 @@ const displayItemArr = shopItems.filter((i) => i.id === Number(cartItem));
 const displayItem = displayItemArr[0];
 
   return (
-    <div>
+    <div className="itemCard">
       <img src={displayItem.image} alt={displayItem.title} />
       <p>{displayItem.title}</p>
       <p>{displayItem.price}</p>
