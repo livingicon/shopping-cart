@@ -4,16 +4,14 @@ import React from "react";
 
 const ItemCard = ({ cartItem, shopItems }) => {
 
-const displayItemArr = shopItems.filter((i) => i.id === Number(cartItem));
-const displayItem = displayItemArr[0];
-
   return (
     <div className="itemCard">
-      <img src={displayItem.image} alt={displayItem.title} />
-      <p>{displayItem.title}</p>
-      <p>{displayItem.price}</p>
-      <button>add</button>
-      <button>remove</button>
+      <img src={cartItem.image} alt={cartItem.title} />
+      <p>{cartItem.title}</p>
+      <p>{cartItem.price}</p>
+      <button>-</button>
+      {cartItem.quantity}
+      <button>+</button>
     </div>
   )
 }
