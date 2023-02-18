@@ -6,7 +6,7 @@ import Home from "./Main/Home";
 import Shop from "./Main/Shop";
 import Checkout from "./Main/Checkout";
 
-const Main = ({ cartItems, addToCart, isVisible, openCart, shopItems }) => {
+const Main = ({ cartItems, addToCart, isVisible, openCart, shopItems, incrementItem }) => {
   // const [shopItems, setShopItems] = useState([]);
 
   // useEffect(() => {
@@ -32,6 +32,8 @@ const Main = ({ cartItems, addToCart, isVisible, openCart, shopItems }) => {
           openCart={openCart}
           cartItems={cartItems}
           shopItems={shopItems}
+          addToCart={addToCart}
+          incrementItem={incrementItem}
         />
       }
       <Routes>

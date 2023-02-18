@@ -32,7 +32,7 @@ const App = () => {
     if (!cartItems.length || (cartItems.filter((i) => i.id === Number(e.target.id)).length === 0)) {
       added[0].quantity = 1;
       setCartItems(cartItems.concat(added[0]));
-    } else {
+    } else { // if it matches what is already in array
       const newCartItems = [...cartItems];
       for (let i=0; i<newCartItems.length; i++) {
         if (newCartItems[i].id === Number(e.target.id)) {
@@ -40,6 +40,18 @@ const App = () => {
         }
         setCartItems(newCartItems);
       }
+    }
+  }
+
+  const incrementItem = (e) => {
+    let cartItemsCopy = [...cartItems];
+    for (let i=0; i<cartItemsCopy.length; i++) {
+      if (cartItemsCopy[i].id === Number(e.target.id) && e.target.innerHTML === '+') {
+        cartItemsCopy[i].quantity = cartItemsCopy[i].quantity + 1;
+      } else if (cartItemsCopy[i].id === Number(e.target.id) && e.target.innerHTML === '-') {
+        cartItemsCopy[i].quantity = cartItemsCopy[i].quantity - 1;
+      }
+      setCartItems(cartItemsCopy); 
     }
   }
 
@@ -58,6 +70,7 @@ const App = () => {
           openCart={openCart}
           isVisible={isVisible}
           shopItems={shopItems}
+          incrementItem={incrementItem}
         />
         <Footer />
       </div>

@@ -2,16 +2,16 @@
 
 import React from "react";
 
-const ItemCard = ({ cartItem }) => {
+const ItemCard = ({ cartItem, addToCart, incrementItem }) => {
 
   return (
     <div className="itemCard">
       <img src={cartItem.image} alt={cartItem.title} />
       <p>{cartItem.title}</p>
       <p>{cartItem.price * cartItem.quantity}</p>
-      <button>-</button>
+      <button id={cartItem.id} onClick={incrementItem}>-</button>
       {cartItem.quantity}
-      <button>+</button>
+      <button id={cartItem.id} onClick={incrementItem}>+</button>
     </div>
   )
 }
