@@ -11,10 +11,10 @@ const Nav = ({ cartItems, openCart }) => {
     <nav>
       <h1>Company Logo</h1>
       <ul className="nav-links">
-        <Link className="link" to=''>
+        <Link className="nav-link" to=''>
           <li>Home</li>
         </Link>
-        <Link className="link" to='/shop'>
+        <Link className="nav-link" to='/shop'>
           <li>Shop</li>
         </Link>
       </ul>

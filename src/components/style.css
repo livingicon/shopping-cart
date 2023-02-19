@@ -46,10 +46,27 @@ nav {
   align-items: center;
   width: 50%;
   list-style: none;
+
 }
 
-.link {
+.nav-link {
   color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+#cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
 }
 
 #cart {

@@ -22,12 +22,14 @@ const Checkout = ({ openCart, cartItems, addToCart, incrementItem }) => {
   ));
 
   return (
-    <div id="cart">
-      <h1>Cart</h1>
-      {checkOutItems}
-      <p>Total: ${total()}</p>
-      {(cartItems.length > 0) && <button onClick={openCart}>checkout</button>}
-      <button onClick={openCart}>continue shopping</button>
+    <div id="cart-container">
+      <div id="cart">
+        <h1>Cart</h1>
+        {checkOutItems}
+        <p>Total: ${total()}</p>
+        {(cartItems.length > 0) && <button onClick={openCart}>checkout</button>}
+        <button onClick={openCart}>continue shopping</button>
+      </div>
     </div>
   )
 }
