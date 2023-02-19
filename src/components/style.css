@@ -58,6 +58,32 @@ nav {
   color: red;
 }
 
+#nav-cart {
+  display: flex;
+}
+
+#cartIcon {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+#cartNum {
+  position: fixed;
+  margin-left: 35px;
+  width: 20px;
+  color: black;
+  background-color: aqua;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #cart-container {
   position: fixed;
   top: 0;
