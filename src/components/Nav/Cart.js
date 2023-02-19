@@ -6,9 +6,9 @@ import cartOutline from "../../images/cartOutline.svg";
 const Cart = ({ cartItems, openCart }) => {
   
   return (
-    <div id="nav-cart">
-      <img src={cartOutline} alt="cart" id="cartIcon" onClick={openCart} />
-      <div id="cartNum">
+    <div id="nav-cart" onClick={openCart}>
+      <img src={cartOutline} alt="cart" id="cartIcon" />
+      <div id="cartNum" onClick={openCart}>
         {cartItems.length ? cartItems.length : null}
       </div>
     </div>

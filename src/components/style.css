@@ -25,9 +25,13 @@ body {
   text-align: center;
 }
 
+#storeName {
+  color: aqua;
+}
+
 .Footer {
   text-align: center;
-  background: blue;
+  background: black;
   color: white;
 }
 
@@ -36,8 +40,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: blue;
+  background: black;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav-links {
@@ -55,11 +61,18 @@ nav {
 }
 
 .nav-link:hover {
-  color: red;
+  -ms-transform: scale(1.5); 
+  transform: scale(1.1);
 }
 
 #nav-cart {
   display: flex;
+}
+
+#nav-cart:hover {
+  -ms-transform: scale(1.5); 
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #cartIcon {
@@ -72,7 +85,7 @@ nav {
 }
 
 #cartNum {
-  position: fixed;
+  position: absolute;
   margin-left: 35px;
   width: 20px;
   color: black;

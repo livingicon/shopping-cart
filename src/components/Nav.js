@@ -9,7 +9,7 @@ const Nav = ({ cartItems, openCart }) => {
 
   return (
     <nav>
-      <h1>Company Logo</h1>
+      <h1 id="storeName">Clothing Store</h1>
       <ul className="nav-links">
         <Link className="nav-link" to=''>
           <li>Home</li>
