@@ -1,10 +1,7 @@
 /* GENERAL */
 
 :root {
-  --blue: #344b97;
-  --dark-grey: #1d2233;
-  --cream: #f7f8d9;
-
+  --blue: #4bd7fa;
 }
 
 html {
@@ -14,10 +11,9 @@ html {
 
 body {
   margin: 0;
-  color: var(--dark-grey);
-  background-image: url('../images/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg');
+  /* background-image: url('../images/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .App {
@@ -31,7 +27,7 @@ body {
 }
 
 #storeName {
-  color: aqua;
+  color: var(--blue);
   font-size: 38px;
   margin: 0px;
 }
@@ -99,18 +95,12 @@ nav {
   margin-left: 35px;
   width: 20px;
   color: black;
-  background-color: aqua;
+  background-color: var(--blue);
   border-radius: 50%;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* HOME */
-
-#fashion {
-  height: 500px;
 }
 
 /* CHECKOUT MODAL */
@@ -220,7 +210,7 @@ nav {
 }
 
 #continueShopBtn {
-  background-color: aqua;
+  background-color: var(--blue);
   border: solid 3px black;
   border-radius: 5px;
   width: 180px;
@@ -236,6 +226,57 @@ nav {
 }
 
 /* HOME PAGE */
+
+#home {
+  /* margin: 100px; */
+  min-height: 100vh;
+  background-image: url('../images/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#journey {
+  margin: 0px;
+  position: relative;
+  left: 10%;
+  top: 100px;
+  font-size: 40px;
+}
+
+#shopNowBtn {
+  margin: 0px;
+  position: relative;
+  left: 10%;
+  top: 120px;
+  background-color: black;
+  color: white;
+  border: solid 3px black;
+  border-radius: 50px;
+  width: 220px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+#shopNowBtn:hover {
+  -ms-transform: scale(1.5); 
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#photoCredit { 
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 10px;
+  color: white;
+}
+
+#photoCredit a {
+  text-decoration: none;
+  color: var(--primary-light);
+}
 
 /* SHOP PAGE */
 
@@ -281,7 +322,7 @@ nav {
 }
 
 .productBtn {
-  background-color: aqua;
+  background-color: var(--blue);
   border: solid 3px black;
   border-radius: 5px;
   width: 180px;
