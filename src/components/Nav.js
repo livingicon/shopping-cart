@@ -11,7 +11,7 @@ const Nav = ({ cartItems, openCart }) => {
     <nav>
       <h1 id="storeName">Journey Clothing</h1>
       <ul className="nav-links">
-        <Link className="nav-link" to=''>
+        <Link className="nav-link" to='/'>
           <li>Home</li>
         </Link>
         <Link className="nav-link" to='/shop'>

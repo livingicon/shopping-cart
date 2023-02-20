@@ -20,8 +20,8 @@ const Main = ({ cartItems, addToCart, isVisible, openCart, shopItems, incrementI
         />
       }
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="/shop" element={
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/shop" element={
           <Shop 
             addToCart={addToCart}
             shopItems={shopItems}
