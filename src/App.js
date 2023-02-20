@@ -59,7 +59,7 @@ const App = () => {
   const openCart = () => !isVisible ? setIsVisible(true) : setIsVisible(false);
 
   return (
-    <Router basename="">
+    <Router basename="/">
       <div className="App">
         <Nav 
           cartItems={cartItems}
