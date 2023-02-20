@@ -28,7 +28,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://livingicon.github.io/shopping-cart",
+  "homepage": "https://livingicon.github.io",
   "browserslist": {
     "production": [
       ">0.2%",
