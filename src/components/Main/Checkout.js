@@ -24,13 +24,13 @@ const Checkout = ({ openCart, cartItems, addToCart, incrementItem }) => {
 
   return (
     <div id="cart-container">
+      <img id="closeCart" onClick={openCart} src={closeCart} alt="close cart" />
       <div id="cart">
-        <img id="closeCart" onClick={openCart} src={closeCart} alt="close cart" />
-        <h1>Cart</h1>
+        <h1>Shopping Cart</h1>
         {checkOutItems}
-        <p>Total: ${total()}</p>
-        {(cartItems.length > 0) && <button onClick={openCart}>checkout</button>}
-        <button id="coninueShopBtn" onClick={openCart}>continue shopping</button>
+        <p id="total">Total: ${total()}</p>
+        {(cartItems.length > 0) && <button id="checkoutBtn" onClick={openCart}>checkout</button>}
+        <button id="continueShopBtn" onClick={openCart}>continue shopping</button>
       </div>
     </div>
   )
