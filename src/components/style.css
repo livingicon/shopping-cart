@@ -136,7 +136,6 @@ nav {
 
 #closeCart {
   position: relative;
-  /* z-index: 1; */
   left: 20%; 
   top: 5%;
   height: 60px;
@@ -238,7 +237,6 @@ nav {
 #journey {
   margin: 0px;
   position: relative;
-  z-index: auto;
   left: 10%;
   top: 100px;
   font-size: 40px;
