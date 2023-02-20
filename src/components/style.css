@@ -15,6 +15,9 @@ html {
 body {
   margin: 0;
   color: var(--dark-grey);
+  background-image: url('../images/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .App {
@@ -102,6 +105,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* HOME */
+
+#fashion {
+  height: 500px;
 }
 
 /* CHECKOUT MODAL */
