@@ -1,7 +1,7 @@
 // App.js
 
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Browser } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -59,7 +59,7 @@ const App = () => {
   const openCart = () => !isVisible ? setIsVisible(true) : setIsVisible(false);
 
   return (
-    <Browser>
+    <Router basename="">
       <div className="App">
         <Nav 
           cartItems={cartItems}
@@ -75,7 +75,7 @@ const App = () => {
         />
         <Footer />
       </div>
-    </Browser>
+    </Router>
   );
 };
 
