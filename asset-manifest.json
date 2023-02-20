@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.d92ca17b.css",
-    "main.js": "/shopping-cart/static/js/main.722199a4.js",
-    "static/media/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg": "/shopping-cart/static/media/jeremie-cremer-M5xVtIv1Lo8-unsplash.924e99e7d6f0608d0164.jpg",
-    "static/media/cartOutline.svg": "/shopping-cart/static/media/cartOutline.a97e6118fdc6331ef39d503fcf2fc533.svg",
-    "index.html": "/shopping-cart/index.html",
-    "static/media/close-circle.svg": "/shopping-cart/static/media/close-circle.ebad04c74af4fbac7c62dd1d3e20b3dc.svg",
-    "main.d92ca17b.css.map": "/shopping-cart/static/css/main.d92ca17b.css.map",
-    "main.722199a4.js.map": "/shopping-cart/static/js/main.722199a4.js.map"
+    "main.css": "/static/css/main.f16ddc86.css",
+    "main.js": "/static/js/main.ab636dea.js",
+    "static/media/jeremie-cremer-M5xVtIv1Lo8-unsplash.jpg": "/static/media/jeremie-cremer-M5xVtIv1Lo8-unsplash.924e99e7d6f0608d0164.jpg",
+    "static/media/cartOutline.svg": "/static/media/cartOutline.a97e6118fdc6331ef39d503fcf2fc533.svg",
+    "index.html": "/index.html",
+    "static/media/close-circle.svg": "/static/media/close-circle.ebad04c74af4fbac7c62dd1d3e20b3dc.svg",
+    "main.f16ddc86.css.map": "/static/css/main.f16ddc86.css.map",
+    "main.ab636dea.js.map": "/static/js/main.ab636dea.js.map"
   },
   "entrypoints": [
-    "static/css/main.d92ca17b.css",
-    "static/js/main.722199a4.js"
+    "static/css/main.f16ddc86.css",
+    "static/js/main.ab636dea.js"
   ]
 }
