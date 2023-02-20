@@ -8,8 +8,10 @@ const ProductCards = ({ item, addToCart }) => {
     <div className="itemCard">
       <img className='itemImg' src={item.image} alt={item.title}/>
       <p className='itemName'>{item.title}</p>
-      <p className='itemPrice'>{item.price}</p>
-      <button className='itemBtn' id={item.id} onClick={addToCart}>add to cart</button>
+      <div className="shopping">
+        <p className='itemPrice'>${item.price.toFixed(2)}</p>
+        <button className='itemBtn' id={item.id} onClick={addToCart}>add to cart</button>
+      </div>
     </div>
   )
 }

@@ -15,8 +15,7 @@ const Shop = ({ addToCart, shopItems }) => {
   ));
   
   return (
-    <div>
-      <h1>Items for Sale</h1>
+    <div className="productGrid">
       {productCards}
     </div>
   );

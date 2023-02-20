@@ -27,12 +27,15 @@ body {
 
 #storeName {
   color: aqua;
+  font-size: 38px;
+  margin: 0px;
 }
 
 .Footer {
   text-align: center;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
+  font-size: 9px;
 }
 
 nav {
@@ -52,7 +55,7 @@ nav {
   align-items: center;
   width: 50%;
   list-style: none;
-
+  font-size: 30px;
 }
 
 .nav-link {
@@ -123,7 +126,59 @@ nav {
   overflow: auto;
 }
 
-img {
-  max-width: 100px;
-  max-height: 100px;
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 295px);
+  grid-gap: 15px;
+  margin: 15px;
+}
+
+.itemCard {
+  max-height: 700px;
+  max-width: 650px;
+  margin: 0px;
+  border: solid 1px rgb(172, 172, 172);
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgb(172, 172, 172);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.itemImg {
+  margin: 10px;
+  max-height: 250px;
+}
+
+.itemName {
+  margin: 0px 10px 10px 10px;
+  justify-content: center;
+}
+
+.shopping {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.itemPrice {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.itemBtn {
+  background-color: aqua;
+  border: solid 1px rgb(172, 172, 172);
+  border-radius: 10px;
+  padding: 5px;
+  width: 180px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.itemBtn:hover {
+  -ms-transform: scale(1.5); 
+  transform: scale(1.1);
+  cursor: pointer;
 }
