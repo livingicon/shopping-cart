@@ -3,6 +3,7 @@
 import React from "react";
 import uniqid from "uniqid";
 import ItemCard from "./ItemCard";
+import closeCart from "../../images/close-circle.svg";
 
 const Checkout = ({ openCart, cartItems, addToCart, incrementItem }) => {
 
@@ -24,11 +25,12 @@ const Checkout = ({ openCart, cartItems, addToCart, incrementItem }) => {
   return (
     <div id="cart-container">
       <div id="cart">
+        <img id="closeCart" onClick={openCart} src={closeCart} alt="close cart" />
         <h1>Cart</h1>
         {checkOutItems}
         <p>Total: ${total()}</p>
         {(cartItems.length > 0) && <button onClick={openCart}>checkout</button>}
-        <button onClick={openCart}>continue shopping</button>
+        <button id="coninueShopBtn" onClick={openCart}>continue shopping</button>
       </div>
     </div>
   )

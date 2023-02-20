@@ -7,6 +7,7 @@ const ProductCards = ({ item, addToCart }) => {
   return (
     <div className="itemCard">
       <img className='itemImg' src={item.image} alt={item.title}/>
+      <div className="productName"></div>
       <p className='itemName'>{item.title}</p>
       <div className="shopping">
         <p className='itemPrice'>${item.price.toFixed(2)}</p>
