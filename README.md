@@ -12,7 +12,7 @@
 <pre class="notranslate">
   <code>
     git clone https://github.com/livingicon/shopping-cart.git
-    cd battleship
+    cd shopping-cart
     npm install
     npm start
   </code>
