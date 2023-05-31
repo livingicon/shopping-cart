@@ -2,7 +2,7 @@
 
 <h1>Shopping Cart</h1>
 
-<p>This React app uses react-router-dom, react hooks, and an API call to demo a multi-page React shopping site.</p>
+<p>This React app uses react-router-dom, react hooks, and an API call to demo a multi-page React shopping site. A "live demo" link has been provided below.</p>
 
 <a href="https://livingicon.github.io/shopping-cart/" rel="nofollow">Live Demo</a>
 <img class="emoji" alt="point_left" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png">
